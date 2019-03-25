@@ -4,7 +4,8 @@
 		<title>Cactus Mania</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="device-width, initial-scale=1, shrink-to-fit=no" >
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Advent+Pro:200|Sue+Ellen+Francisco" rel="stylesheet">
 	</head>
 
 	<body>
@@ -12,7 +13,7 @@
 			<div class="header__logo-box">
 				<img src="img/logo.png" alt="logo" class="header__logo">
 			</div>
-			<nav class="header__navbar">
+			<!-- <nav class="header__navbar">
 				<ul class="navbar__nav">
 					<li class="navbar__nav-item">
 						<a class="navbar__nav-link" href="#">About</a>
@@ -24,7 +25,7 @@
 						<a class="navbar__nav-link" href="#">Subscribe</a>
 					</li>
 				</ul>
-			</nav>
+			</nav> -->
 			<div class="header__text-box">
 				<h1 class="heading-primary">
 					<span class="heading-primary--main">Cactus</span>
@@ -32,50 +33,70 @@
 				</h1>
 			</div>	
 		</header>
+
+
 		<section class="section-articles">
-			<div class="row">
-				<h2 class="heading-secondary">Latest Articles</h2>
-				<div class="col-1-of-3">
-					<div class="card">
-						<img src="img/cactus2.jpg" alt="cactus" class="card__img">
-						<h3 class="heading-tertiary">How to take care of your new cactus</h3>
-					</div>
+			<div class="articles">
+				<div class="articles__text-box u-margin-bottom-xxlarge">
+					<h2 class="heading-secondary u-margin-bottom-medium">Latest Articles</h2>
+					<div class="articles__text-box--hr"></div>
 				</div>
-				<div class="col-1-of-3">
-					<div class="card">
-						<img src="img/cactus11.jpg" alt="cactus" class="card__img">
-						<h3 class="heading-tertiary">The best cactus for your living space</h3>
+				<div class="row">
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__img card__img--1"></div>
+							<div class="card__text-box">
+								<h3 class="heading-tertiary card__text">How to take care of your new cactus</h3>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-1-of-3">
-					<div class="card">
-						<img src="img/cactus8.jpg" alt="cactus" class="card__img">
-						<h3 class="heading-tertiary">5 things you didn't know about succulents</h3>
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__img card__img--2"></div>
+							<div class="card__text-box">
+								<h3 class="heading-tertiary card__text">The best cactus for your living space</h3>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section-about">
-			<div class="row">
-				<div class="col-1-of-2">
-					<div class="about">
-						<div class="about__img">
-							<img src="img/cactus4.jpg" alt="cactus" class="about__image-content">
+					<div class="col-1-of-3">
+						<div class="card">
+							<div class="card__img card__img--3"></div>
+							<div class="card__text-box">
+								<div class="card__text">
+									<div class="card__hr u-margin-bottom-small"></div>
+									<h3 class="heading-tertiary">5 things you didn't know about succulents</h3>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-1-of-2">
-					<div class="about__text-box">
-						<h2 class="heading-secondary">
-							about
-						</h2>
-						<p class="paragraph">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eius quibusdam architecto? Consequatur quisquam neque repudiandae quidem eaque quae, molestiae corporis earum aperiam voluptas placeat sit atque iure quo magni?
-						</p>
+			</section>
+
+
+			<section class="section-about">
+				<div class="row">
+					<div class="col-1-of-2">
+						<div class="about">
+							<div class="about__img">
+								<img src="img/cactus4.jpg" alt="cactus" class="about__image-content">
+							</div>
+						</div>
+					</div>
+					<div class="col-1-of-2">
+						<div class="about__text-box">
+							<h2 class="heading-secondary">
+								about
+							</h2>
+							<p class="paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eius quibusdam architecto? Consequatur quisquam neque repudiandae quidem eaque quae, molestiae corporis earum aperiam voluptas placeat sit atque iure quo magni?
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+
 		<section class="section-subscribe">
 			<div class="subscribe">
 				<h2 class="heading-secondary">Subscribe</h2>
@@ -91,6 +112,7 @@
 				</form>
 			</div>
 		</section>
+
 
 		<footer class="footer">
 			<div class="row">
@@ -122,5 +144,7 @@
 				</div>
 			</div>
 		</footer>
+
+
 	</body>
 </html>
