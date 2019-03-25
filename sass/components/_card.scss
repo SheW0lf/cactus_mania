@@ -1,0 +1,43 @@
+.card{
+    height: 60rem;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    border-radius: .3rem;
+    overflow: hidden;
+
+    &__img{
+        background-size: cover;
+        height: 30rem;
+        &--1{
+            background-image: url(../../img/cactus8.jpg);
+        }
+
+        &--2{
+            background-image: url(../../img/cactus6.jpg);
+        }
+
+        &--3{
+            background-image: url(../../img/cactus7.jpg);
+        }
+    }
+
+    &__text-box{
+        text-align: center;
+        position: relative;
+        height: 50%;
+    }
+
+    &__text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__hr{
+        border: .1rem solid $color-gray-dark;
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+    }
+}

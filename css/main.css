@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3rem;
+}
+
+body {
+  font-family: 'Advent Pro', sans-serif;
+  line-height: 1.2;
+  color: #777;
+}
+
+.heading-primary {
+  color: #eee;
+}
+
+.heading-primary--main {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 20rem;
+  display: block;
+  letter-spacing: 1rem;
+}
+
+.heading-primary--sub {
+  font-size: 4rem;
+  display: block;
+  letter-spacing: 1rem;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+}
+
+.paragraph {
+  font-size: 2rem;
+}
+
+.u-margin-bottom-xxlarge {
+  margin-bottom: 10rem;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 3rem;
+}
+
+.u-margin-bottom-xsmall {
+  margin-bottom: 2.5rem;
+}
+
+.card {
+  height: 60rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  border-radius: .3rem;
+  overflow: hidden;
+}
+
+.card__img {
+  background-size: cover;
+  height: 30rem;
+}
+
+.card__img--1 {
+  background-image: url(../../img/cactus8.jpg);
+}
+
+.card__img--2 {
+  background-image: url(../../img/cactus6.jpg);
+}
+
+.card__img--3 {
+  background-image: url(../../img/cactus7.jpg);
+}
+
+.card__text-box {
+  text-align: center;
+  position: relative;
+  height: 50%;
+}
+
+.card__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card__hr {
+  border: 0.1rem solid #777;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.header {
+  height: 95vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../img/cactus2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../img/cactus2.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 5rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.row {
+  max-width: 125rem;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+.articles {
+  position: relative;
+}
+
+.articles__text-box {
+  width: 50%;
+  text-align: center;
+}
+
+.articles__text-box--hr {
+  display: inline-block;
+  border: 0.1rem solid #777;
+  width: 20%;
+  text-align: center;
+}
+
+.section-articles {
+  padding: 20rem 0;
+  background-color: #eee;
+}
+/*# sourceMappingURL=main.css.map */
