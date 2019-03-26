@@ -2,6 +2,7 @@ body{
     font-family: 'Advent Pro', sans-serif;
     line-height: 1.2;
     color: $color-gray-dark;
+    text-transform: lowercase;
 }
 
 .heading-primary{
@@ -22,7 +23,7 @@ body{
 
 .heading-secondary{
     font-size: 4rem;
-    text-align: center;
+    letter-spacing: .3rem;
 }
 
 .heading-tertiary{
@@ -31,4 +32,5 @@ body{
 
 .paragraph{
     font-size: 2rem;
+    margin-bottom: 2rem;
 }

@@ -1,4 +1,9 @@
+//TOP MARGINS
+.u-margin-top-large{
+    margin-top: 5rem;
+}
 
+// BOTTOM MARGINS
 .u-margin-bottom-xxlarge{
     margin-bottom: 10rem;
 }
@@ -16,5 +21,19 @@
 }
 
 .u-margin-bottom-xsmall{
-    margin-bottom: 2.5rem; 
+    margin-bottom: 2rem; 
+}
+
+//CENTER ALIGN
+.u-center{
+    text-align: center;
+}
+
+//HR
+
+.u-hr{
+    display: inline-block;
+    border: .1rem solid $color-gray-dark;
+    width: 5%;
+    text-align: center;
 }

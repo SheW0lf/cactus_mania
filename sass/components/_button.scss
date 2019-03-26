@@ -1,0 +1,23 @@
+.btn{
+    padding: 1.5rem;
+    color: inherit;
+    font-family: inherit;
+    background-color: $color-gray-light;
+    font-size: 2.5rem;
+    border: .2rem solid $color-gray-dark;
+    width: 25%;
+    transition: all .2s;
+
+    &:hover{
+        background-color: $color-gray-dark;
+        color: $color-gray-light;
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        transform: translateY(-.3rem);
+    }
+
+    &:active{
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        transform: translateY(-.1rem);
+        outline: none;
+    }
+}

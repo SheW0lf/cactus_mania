@@ -1,4 +1,18 @@
 .section-articles{
+    padding: 15rem 0;
+    background-color: $color-gray-light;
+}
+
+.section-about{
+    background-color: $color-white;
+}
+
+.section-subscribe{
     padding: 20rem 0;
     background-color: $color-gray-light;
+}
+
+.footer{
+    padding: 8rem 0;
+    background-color: $color-gray-dark;
 }

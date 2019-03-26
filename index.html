@@ -6,6 +6,7 @@
 		<meta name="viewport" content="device-width, initial-scale=1, shrink-to-fit=no" >
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Advent+Pro:200|Sue+Ellen+Francisco" rel="stylesheet">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
 	</head>
 
 	<body>
@@ -35,18 +36,21 @@
 		</header>
 
 
-		<section class="section-articles">
+		<section class="section-articles" id="articles">
 			<div class="articles">
 				<div class="articles__text-box u-margin-bottom-xxlarge">
-					<h2 class="heading-secondary u-margin-bottom-medium">Latest Articles</h2>
-					<div class="articles__text-box--hr"></div>
+					<h2 class="heading-secondary">Latest Articles</h2>
+					<div class="u-hr"></div>
 				</div>
-				<div class="row">
+				<div class="row u-margin-bottom-medium">
 					<div class="col-1-of-3">
 						<div class="card">
 							<div class="card__img card__img--1"></div>
 							<div class="card__text-box">
-								<h3 class="heading-tertiary card__text">How to take care of your new cactus</h3>
+								<div class="card__text">
+									<div class="card__hr u-margin-bottom-xsmall"></div>
+									<h3 class="heading-tertiary">How to take care of your new cactus</h3>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -54,7 +58,10 @@
 						<div class="card">
 							<div class="card__img card__img--2"></div>
 							<div class="card__text-box">
-								<h3 class="heading-tertiary card__text">The best cactus for your living space</h3>
+								<div class="card__text">
+									<div class="card__hr u-margin-bottom-xsmall"></div>
+									<h3 class="heading-tertiary">The best cactus for your living space</h3>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -63,7 +70,7 @@
 							<div class="card__img card__img--3"></div>
 							<div class="card__text-box">
 								<div class="card__text">
-									<div class="card__hr u-margin-bottom-small"></div>
+									<div class="card__hr u-margin-bottom-xsmall"></div>
 									<h3 class="heading-tertiary">5 things you didn't know about succulents</h3>
 								</div>
 							</div>
@@ -73,40 +80,42 @@
 			</section>
 
 
-			<section class="section-about">
-				<div class="row">
-					<div class="col-1-of-2">
-						<div class="about">
-							<div class="about__img">
-								<img src="img/cactus4.jpg" alt="cactus" class="about__image-content">
-							</div>
-						</div>
-					</div>
-					<div class="col-1-of-2">
-						<div class="about__text-box">
+			<section class="section-about" id="about">
+				<div class="about">
+					<div class="about__img"></div>
+					<div class="about__text-box">
+						<div class="about__title u-margin-bottom-medium">
 							<h2 class="heading-secondary">
 								about
 							</h2>
-							<p class="paragraph">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eius quibusdam architecto? Consequatur quisquam neque repudiandae quidem eaque quae, molestiae corporis earum aperiam voluptas placeat sit atque iure quo magni?
-							</p>
+							<div class="u-hr"></div>
 						</div>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga tenetur recusandae neque. Officiis id tempore incidunt voluptas. Voluptatum maxime minus dolores ab, est vero. Nostrum beatae voluptate nam aliquid.
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quaerat, debitis nostrum accusamus quis atque perspiciatis labore? Dolorum, quae obcaecati error quia sunt, enim quod aspernatur, quam consectetur aut vel?
+						</p>
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem eius quibusdam architecto? Consequatur quisquam neque repudiandae quidem eaque quae, molestiae corporis earum aperiam voluptas placeat sit atque iure quo magni?
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ut nesciunt aspernatur tempore consectetur magnam placeat deserunt quod. Impedit at totam asperiores excepturi provident! Dolor similique nobis vel enim possimus?
+						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 
-		<section class="section-subscribe">
+		<section class="section-subscribe" id="subscribe">
 			<div class="subscribe">
-				<h2 class="heading-secondary">Subscribe</h2>
-				<p class="paragraph">Sign up for the newsletter</p>
-				<form action="#" class="form">
+				<div class="subscribe__text-box u-center">
+					<h2 class="heading-secondary">Subscribe</h2>
+					<p class="paragraph">Sign up for the newsletter</p>
+				</div>
+				<form action="#" class="form u-margin-top-large">
 					<div class="form__group">
-						<input type="email" id="email" class="form__input" placeholder="Email address" required>
-						<label for="email" class="form__label">Email address</label>
+						<input type="email" id="email" class="form__input" placeholder="email address" required>
+						<label for="email" class="form__label">email address</label>
 					</div>
-					<div class="form__group">
+					<div class="form__group u-center">
 						<button class="btn">Submit</button>
 					</div>
 				</form>
@@ -115,14 +124,17 @@
 
 
 		<footer class="footer">
+			<div class="footer__logo-box u-margin-bottom-large">
+				<img src="img/logo.png" alt="logo" class="footer__logo">
+			</div>
 			<div class="row">
 				<div class="col-1-of-3">
 					<div class="footer__social">
 						<div class="footer__nav">
 							<ul class="footer__list">
-								<li class="footer__item"><a href="#" class="footer__link">website</a></li>
-								<li class="footer__item"><a href="#" class="footer__link">github</a></li>
-								<li class="footer__item"><a href="#" class="footer__link">twitter</a></li>
+								<li class="footer__item"><a href="#" class="footer__link"><i class="fal fa-browser fa-lg"></i></a></li>
+								<li class="footer__item"><a href="#" class="footer__link"><i class="fab fa-github-alt fa-lg"></i></a></li>
+								<li class="footer__item"><a href="#" class="footer__link"><i class="fab fa-twitter fa-lg"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -130,15 +142,15 @@
 				<div class="col-1-of-3">
 					<div class="footer__copyright">
 						<p class="paragraph">Copyright &copy; 2019</p>
-						<p class="paragraph">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+						<p class="paragraph">Icons made by <a  href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
 					</div>
 				</div>
 				<div class="col-1-of-3">
 					<div class="footer__nav">
 						<ul class="footer__list">
-							<li class="footer__item"><a href="#" class="footer__link">About</a></li>
-							<li class="footer__item"><a href="#" class="footer__link">Articles</a></li>
-							<li class="footer__item"><a href="#" class="footer__link">Subscribe</a></li>
+							<li class="footer__item"><a href="#about" class="footer__link">About</a></li>
+							<li class="footer__item"><a href="#articles" class="footer__link">Articles</a></li>
+							<li class="footer__item"><a href="#subscribe" class="footer__link">Subscribe</a></li>
 						</ul>
 					</div>
 				</div>

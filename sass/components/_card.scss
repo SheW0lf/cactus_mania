@@ -7,7 +7,7 @@
 
     &__img{
         background-size: cover;
-        height: 30rem;
+        height: 40rem;
         &--1{
             background-image: url(../../img/cactus8.jpg);
         }
@@ -24,7 +24,7 @@
     &__text-box{
         text-align: center;
         position: relative;
-        height: 50%;
+        height: 20rem;
     }
 
     &__text{
@@ -36,7 +36,7 @@
 
     &__hr{
         border: .1rem solid $color-gray-dark;
-        width: 50%;
+        width: 20%;
         display: inline-block;
         text-align: center;
     }
