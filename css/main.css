@@ -97,6 +97,8 @@ body {
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   border-radius: .3rem;
   overflow: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .card__img {
@@ -135,6 +137,13 @@ body {
   width: 20%;
   display: inline-block;
   text-align: center;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
 }
 
 .form__group:not(:last-child) {
