@@ -1,0 +1,169 @@
+.navigation{
+
+    &__checkbox{
+        display: none;
+    }
+
+    &__button{
+        background-color: $color-white;
+        height: 7rem;
+        width: 7rem;
+        border-radius: .3rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        z-index: 2000;
+        text-align: center;
+        box-shadow: 0 1rem 3rem rgba($color-black, .2);
+        cursor: pointer;
+    }
+
+    &__icon{
+        position: relaitve;
+        margin-top: 3rem;
+
+        &,
+        &::before,
+        &::after{
+            height: .8rem;
+            width: .8rem;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: $color-gray-dark;
+            transition: all .3s;
+        }
+
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            
+        }
+
+        &::before{
+            left: 1.4rem;
+        }
+
+        &::after{
+            right: 1.4rem;
+        }
+    }
+
+    &__close{
+        position: absolute;
+        top: 1.4rem;
+        left: 2.2rem;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    &__button:hover &__icon::before{
+        left: 1.1rem;
+    }
+
+    &__button:hover &__icon::after{
+        right: 1.1rem;
+    }
+
+    &__button:hover &__close{
+        transform: scale(1.2);
+    }
+
+    &__background{
+        height: 7rem;
+        width: 7rem;
+        border-radius: .3rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        background-image: linear-gradient(to bottom left, $color-gray-light, $color-green);
+        z-index: 1000;
+        transition: all .8s;
+        
+    }
+
+    &__nav{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1500; //nav needs to be behind the button, but on top of the background
+        opacity: 0; // set opacity to 0 at initial state to hide the nav elements
+        width: 0;   // set width to 0 at inital state to hide the ability to click the transparent links
+        transition: all .8s;
+    }
+
+    &__list{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+    }
+
+    &__item{
+        margin: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    &__link{
+        &:link,
+        &:visited{
+            display: inline-block;
+            font-size: 5rem;
+            color: $color-gray-light;
+            text-decoration: none;
+            position: relative;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: .2rem;
+            display: block;
+            margin-top: .5rem;
+            right: 0;
+            background-color: $color-gray-light;
+            transition: width .2s ease;
+        }
+
+        &:hover::after,
+        &:active::after{
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    &__checkbox:checked ~ &__background{
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__nav{
+        width: 100%;
+        opacity: 1;
+    }
+
+    &__checkbox:checked + &__button &__icon{
+        &,
+        &::before,
+        &::after{
+            opacity: 0;
+        }
+
+        &::before{
+            left: 1rem;
+        }
+
+        &::after{
+            right: 1rem;
+        }
+    }
+
+    &__checkbox:checked + &__button &__close{
+        opacity: 1;
+    }
+
+}
