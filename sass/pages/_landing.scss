@@ -4,7 +4,7 @@
 }
 
 .section-about{
-    background-color: $color-white;
+    background: transparent; //transparent background so it doesn't cover the articles background when the margin is applied
 }
 
 .section-subscribe{

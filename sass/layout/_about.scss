@@ -1,5 +1,7 @@
 .about{
     @include clearfix;
+    padding-top: 15rem; //added padding then pushed the padding up with a negative margin so when clicking the nav links the smaller about div is evenly spaced between the gray of the articles and subscribe section.
+    margin-top: -15rem;
     &__img{
         background-image: url(../../img/cactus4.jpg);
         background-size: cover;
