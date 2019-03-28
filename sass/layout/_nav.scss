@@ -6,8 +6,8 @@
 
     &__button{
         background-color: $color-white;
-        height: 7rem;
-        width: 7rem;
+        height: 6rem;
+        width: 6rem;
         border-radius: .3rem;
         position: fixed;
         top: 6rem;
@@ -20,7 +20,7 @@
 
     &__icon{
         position: relaitve;
-        margin-top: 3rem;
+        margin-top: 2.5rem;
 
         &,
         &::before,
@@ -51,8 +51,8 @@
 
     &__close{
         position: absolute;
-        top: 1.4rem;
-        left: 2.2rem;
+        top: 1rem;
+        left: 1.8rem;
         opacity: 0;
         transition: all .3s;
     }
@@ -70,8 +70,8 @@
     }
 
     &__background{
-        height: 7rem;
-        width: 7rem;
+        height: 6rem;
+        width: 6rem;
         border-radius: .3rem;
         position: fixed;
         top: 6rem;

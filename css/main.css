@@ -399,8 +399,8 @@ body {
 
 .navigation__button {
   background-color: #fff;
-  height: 7rem;
-  width: 7rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: .3rem;
   position: fixed;
   top: 6rem;
@@ -414,7 +414,7 @@ body {
 
 .navigation__icon {
   position: relaitve;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
@@ -442,8 +442,8 @@ body {
 
 .navigation__close {
   position: absolute;
-  top: 1.4rem;
-  left: 2.2rem;
+  top: 1rem;
+  left: 1.8rem;
   opacity: 0;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -463,8 +463,8 @@ body {
 }
 
 .navigation__background {
-  height: 7rem;
-  width: 7rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: .3rem;
   position: fixed;
   top: 6rem;
