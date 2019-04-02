@@ -1,6 +1,7 @@
 .row{
     max-width: $grid-width;
     margin: 0 auto;
+    position: relative;
     &:not(:last-child){
         margin-bottom: $gutter-horizontal;
     }
@@ -11,7 +12,19 @@
         float: left;
         &:not(:last-child){
             margin-right: $gutter-vertical;
+
+            @include responsive(tab-port){
+                margin-right: 0;
+                margin-bottom: $gutter-horizontal;
+            }
         }
+
+        @include responsive(tab-port){
+            width: 75% !important;
+            margin: 0 12.5%;
+            
+        }
+       
     }
 
     .col-1-of-2{

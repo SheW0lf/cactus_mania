@@ -5,3 +5,37 @@
         clear:both;
     }
 }
+
+//Media queries are NOT effected by the root font size (can't use rems).
+// since the queries will be placed inside sass code blocks, ems are the best option since ems inherit their size from the parent element. This keeps everything consistant.
+// These media queries cover the most commonly used device screen widths.
+//
+// also since this particular site was built with a desktop first approch, all media queries inside the sass code blocks should be ordered from largest to smallest so the styles
+//don't get overwritten by a larger query below the query you intended to apply styles too
+//
+// 1em = 16px as default
+@mixin responsive($breakpoint){
+    @if $breakpoint == phone{
+        @media only screen and (max-width: 37.5em){ //600px
+            @content;
+        }
+    }
+
+    @if $breakpoint == tab-port{
+        @media only screen and (max-width: 56.25em){ //900px
+            @content;
+        }
+    }
+
+    @if $breakpoint == tab-land{
+        @media only screen and (max-width: 75em){ //1200px
+            @content;
+        }
+    }
+
+    @if $breakpoint == big-desktop{
+        @media only screen and (max-width: 112.5em){ //1800px
+            @content;
+        }
+    }
+}

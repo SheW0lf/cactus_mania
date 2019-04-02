@@ -11,10 +11,34 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 3rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
 }
 
 body {
@@ -35,10 +59,22 @@ body {
   letter-spacing: 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--main {
+    font-size: 15rem;
+  }
+}
+
 .heading-primary--sub {
   font-size: 4rem;
   display: block;
   letter-spacing: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--sub {
+    font-size: 3rem;
+  }
 }
 
 .heading-secondary {
@@ -85,6 +121,7 @@ body {
 
 .u-hr {
   display: inline-block;
+  background-color: #777;
   border: 0.1rem solid #777;
   width: 5%;
   text-align: center;
@@ -101,21 +138,34 @@ body {
   transition: all .3s;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .card {
+    height: 50rem;
+  }
+}
+
 .card__img {
   background-size: cover;
   height: 40rem;
+  background-position: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .card__img {
+    height: 30rem;
+  }
 }
 
 .card__img--1 {
-  background-image: url(../../img/cactus8.jpg);
-}
-
-.card__img--2 {
   background-image: url(../../img/cactus6.jpg);
 }
 
-.card__img--3 {
+.card__img--2 {
   background-image: url(../../img/cactus7.jpg);
+}
+
+.card__img--3 {
+  background-image: url(../../img/cactus9.jpg);
 }
 
 .card__text-box {
@@ -197,9 +247,15 @@ body {
   background-color: #eee;
   font-size: 2.5rem;
   border: 0.2rem solid #777;
-  width: 25%;
+  width: 30%;
   -webkit-transition: all .2s;
   transition: all .2s;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .btn {
+    width: 35%;
+  }
 }
 
 .btn:hover {
@@ -250,6 +306,7 @@ body {
 .row {
   max-width: 125rem;
   margin: 0 auto;
+  position: relative;
 }
 
 .row:not(:last-child) {
@@ -268,6 +325,20 @@ body {
 
 .row [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 8rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row [class^="col-"] {
+    width: 75% !important;
+    margin: 0 12.5%;
+  }
 }
 
 .row .col-1-of-2 {
@@ -298,6 +369,14 @@ body {
 .footer__nav {
   display: inline-block;
   font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .footer__nav {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .footer__list {
@@ -369,6 +448,13 @@ body {
   clear: both;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .about {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
 .about__img {
   background-image: url(../../img/cactus4.jpg);
   background-size: cover;
@@ -377,10 +463,32 @@ body {
   float: left;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .about__img {
+    display: block;
+    width: 100%;
+    height: 30rem;
+  }
+}
+
 .about__text-box {
   width: 50%;
-  padding: 10rem;
+  padding: 5rem 5rem 0 5rem;
   float: right;
+}
+
+@media only screen and (max-width: 75em) {
+  .about__text-box {
+    padding: 3rem 3rem 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .about__text-box {
+    display: block;
+    width: 100%;
+    padding: 3rem;
+  }
 }
 
 .about__title {
@@ -391,6 +499,12 @@ body {
   width: 50%;
   display: block;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .subscribe {
+    width: 80%;
+  }
 }
 
 .navigation__checkbox {
@@ -410,6 +524,13 @@ body {
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+  }
 }
 
 .navigation__icon {
@@ -474,6 +595,13 @@ body {
   z-index: 1000;
   -webkit-transition: all 0.8s cubic-bezier(1, 0, 0, 1);
   transition: all 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navigation__background {
+    top: 3rem;
+    right: 3rem;
+  }
 }
 
 .navigation__nav {

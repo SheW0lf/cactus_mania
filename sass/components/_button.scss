@@ -5,8 +5,12 @@
     background-color: $color-gray-light;
     font-size: 2.5rem;
     border: .2rem solid $color-gray-dark;
-    width: 25%;
+    width: 30%;
     transition: all .2s;
+
+    @include responsive(phone){
+        width: 35%;
+    }
 
     &:hover{
         background-color: $color-gray-dark;

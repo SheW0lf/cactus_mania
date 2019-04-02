@@ -2,18 +2,42 @@
     @include clearfix;
     padding-top: 15rem; //added padding then pushed the padding up with a negative margin so when clicking the nav links the smaller about div is evenly spaced between the gray of the articles and subscribe section.
     margin-top: -15rem;
+
+    @include responsive(tab-port){
+        padding-top: 0;
+        margin-top: 0;
+    }
+   
     &__img{
         background-image: url(../../img/cactus4.jpg);
         background-size: cover;
         height: 60rem;
         width: 50%;
         float: left;
+
+        @include responsive(tab-port){
+            display: block;
+            width: 100%;
+            height: 30rem;
+        }
+        
     }
 
     &__text-box{
         width: 50%;
-        padding: 10rem;
+        padding: 5rem 5rem 0 5rem;
         float: right;
+
+        @include responsive(tab-land){
+            padding: 3rem 3rem 0 3rem;
+        }
+
+        @include responsive(tab-port){
+            display: block;
+            width: 100%;
+            padding: 3rem;
+        }
+        
     }
 
     &__title{

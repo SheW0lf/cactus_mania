@@ -6,19 +6,31 @@
     overflow: hidden;
     transition: all .3s;
 
+    @include responsive(tab-port){
+        height: 50rem;
+    }
+
     &__img{
         background-size: cover;
         height: 40rem;
-        &--1{
-            background-image: url(../../img/cactus8.jpg);
-        }
+        background-position: center;
 
-        &--2{
+        @include responsive(tab-port){
+            height: 30rem;
+        }
+    
+        
+
+        &--1{
             background-image: url(../../img/cactus6.jpg);
         }
 
-        &--3{
+        &--2{
             background-image: url(../../img/cactus7.jpg);
+        }
+
+        &--3{
+            background-image: url(../../img/cactus9.jpg);
         }
     }
 
@@ -26,6 +38,7 @@
         text-align: center;
         position: relative;
         height: 20rem;
+    
     }
 
     &__text{

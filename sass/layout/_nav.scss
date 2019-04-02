@@ -16,6 +16,11 @@
         text-align: center;
         box-shadow: 0 1rem 3rem rgba($color-black, .2);
         cursor: pointer;
+
+        @include responsive(tab-port){
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__icon{
@@ -79,6 +84,11 @@
         background-image: linear-gradient(to bottom left, $color-gray-light, $color-green);
         z-index: 1000;
         transition: all .8s cubic-bezier(1, 0, 0, 1);
+
+        @include responsive(tab-port){
+            top: 3rem;
+            right: 3rem;
+        }
         
     }
 
